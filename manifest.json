@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Drawer",
+  "version": "1.0",
+  "description": "抽獎",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "version_name": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+
+}
